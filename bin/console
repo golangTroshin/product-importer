@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+
+$application = require __DIR__ . '/../bootstrap/bootstrap.php';
+
+try {
+    $application->run();
+} catch (Throwable $e) {
+    echo 'Error: ' . $e->getMessage();
+}
